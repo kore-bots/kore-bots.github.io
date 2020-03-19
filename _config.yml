@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Kore.ai Infra Docs
-email: devops@kore.com
-author: Devops Admin
+title: Docsy Jekyll
+email: your-email@domain.com
+author: Dinosaur Avocado
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -26,17 +26,17 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/docsy-jekyll" # the subpath of your site, e.g. /blog
 
 # This is mostly for testing
-url: "https://kore-bots.github.io" # the base hostname & protocol for your site
+url: "https://vsoch.github.io" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/kore-bots/kore-bots.github.io"
-github_user: "kore-bots"
-github_repo: "kore-bots.github.io"
+repo: "https://github.com/vsoch/docsy-jekyll"
+github_user: "vsoch"
+github_repo: "docsy-jekyll"
 
 # Optional
-twitter: kore-bots
-linkedin: kore-bots
-dockerhub: kore-bots
+twitter: vsoch
+linkedin: vsochat
+dockerhub: vanessa
 
 # Should there be feedback buttons at the bottom of pages?
 feedback: true
