@@ -2,9 +2,9 @@
   "name": "just-the-docs",
   "version": "0.2.7",
   "description": "A modern Jekyll theme for documentation",
-  "repository": "pmarsceill/just-the-docs",
+  "repository": "kore-bots/just-the-docs",
   "license": "MIT",
-  "bugs": "https://github.com/pmarsceill/just-the-docs/issues",
+  "bugs": "https://github.com/kore-bots/just-the-docs/issues",
   "devDependencies": {
     "stylelint": "^10.0.1",
     "stylelint-config-primer": "^8.0.0",
