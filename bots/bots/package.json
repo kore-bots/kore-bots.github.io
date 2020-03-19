@@ -1,10 +1,10 @@
 {
-  "name": "just-the-docs",
+  "name": "kore-bots",
   "version": "0.2.7",
   "description": "A modern Jekyll theme for documentation",
-  "repository": "kore-bots/just-the-docs",
+  "repository": "kore-bots/kore-bots",
   "license": "MIT",
-  "bugs": "https://github.com/kore-bots/just-the-docs/issues",
+  "bugs": "https://github.com/kore-bots/kore-bots/issues",
   "devDependencies": {
     "stylelint": "^10.0.1",
     "stylelint-config-primer": "^8.0.0",

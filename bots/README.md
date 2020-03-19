@@ -1,11 +1,11 @@
 <p align="right">
-    <a href="https://badge.fury.io/rb/just-the-docs"><img src="https://badge.fury.io/rb/just-the-docs.svg" alt="Gem version"></a> <a href="https://github.com/kore-bots/just-the-docs/actions"><img src="https://github.com/kore-bots/just-the-docs/workflows/CI/badge.svg" alt="Build status"></a>
+    <a href="https://badge.fury.io/rb/kore-bots"><img src="https://badge.fury.io/rb/kore-bots.svg" alt="Gem version"></a> <a href="https://github.com/kore-bots/kore-bots/actions"><img src="https://github.com/kore-bots/kore-bots/workflows/CI/badge.svg" alt="Build status"></a>
 </p>
 <br><br>
 <p align="center">
     <h1 align="center">Just the Docs</h1>
     <p align="center">A modern, highly customizable, and responsive Jekyll theme for documentation with built-in search.<br>Easily hosted on GitHub Pages with few dependencies.</p>
-    <p align="center"><strong><a href="https://kore-bots.github.io/just-the-docs/">See it in action!</a></strong></p>
+    <p align="center"><strong><a href="https://kore-bots.github.io/kore-bots/">See it in action!</a></strong></p>
     <br><br><br>
 </p>
 
@@ -16,13 +16,13 @@
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
-gem "just-the-docs"
+gem "kore-bots"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: just-the-docs
+theme: kore-bots
 ```
 
 And then execute:
@@ -31,22 +31,22 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install just-the-docs
+    $ gem install kore-bots
 
 ## Usage
 
-[View the documentation](https://kore-bots.github.io/just-the-docs/) for usage information.
+[View the documentation](https://kore-bots.github.io/kore-bots/) for usage information.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/kore-bots/just-the-docs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/kore-bots/kore-bots. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ### Submitting code changes:
 
-- Open a [Pull Request](https://github.com/kore-bots/just-the-docs/pulls)
+- Open a [Pull Request](https://github.com/kore-bots/kore-bots/pulls)
 - Ensure all CI tests pass
 - Await code review
-- Bump the version number in `just-the-docs.gemspec` and `package.json` according to [semantic versioning](https://semver.org/).
+- Bump the version number in `kore-bots.gemspec` and `package.json` according to [semantic versioning](https://semver.org/).
 
 ### Design and development principles of this theme:
 
