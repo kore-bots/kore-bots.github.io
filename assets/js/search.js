@@ -1,106 +1,43 @@
----
-layout: null
-excluded_in_search: true
----
-(function () {
-	function getQueryVariable(variable) {
-		var query = window.location.search.substring(1),
-			vars = query.split("&");
+/*
+Copyright 2018 Google LLC
 
-		for (var i = 0; i < vars.length; i++) {
-			var pair = vars[i].split("=");
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-			if (pair[0] === variable) {
-				return decodeURIComponent(pair[1].replace(/\+/g, '%20')).trim();
-			}
-		}
-	}
+    https://www.apache.org/licenses/LICENSE-2.0
 
-	function getPreview(query, content, previewLength) {
-		previewLength = previewLength || (content.length * 2);
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
 
-		var parts = query.split(" "),
-			match = content.toLowerCase().indexOf(query.toLowerCase()),
-			matchLength = query.length,
-			preview;
+(function($) {
 
-		// Find a relevant location in content
-		for (var i = 0; i < parts.length; i++) {
-			if (match >= 0) {
-				break;
-			}
+    'use strict';
 
-			match = content.toLowerCase().indexOf(parts[i].toLowerCase());
-			matchLength = parts[i].length;
-		}
+    var Search = {
+        init: function() {
+            $(document).ready(function() {
+               $(document).on('keypress', '.td-search-input', function(e) {
+                    if (e.keyCode !== 13) {
+                        return
+                    }
 
-		// Create preview
-		if (match >= 0) {
-			var start = match - (previewLength / 2),
-				end = start > 0 ? match + matchLength + (previewLength / 2) : previewLength;
+                    var query = $(this).val();
+                    var searchPage = "{{ "search/" | absURL }}?q=" + query;
+                    document.location = searchPage;
 
-			preview = content.substring(start, end).trim();
+                    return false;
+                });
 
-			if (start > 0) {
-				preview = "..." + preview;
-			}
+            });
+        },
+    };
 
-			if (end < content.length) {
-				preview = preview + "...";
-			}
+    Search.init();
 
-			// Highlight query parts
-			preview = preview.replace(new RegExp("(" + parts.join("|") + ")", "gi"), "<strong>$1</strong>");
-		} else {
-			// Use start of content if no match found
-			preview = content.substring(0, previewLength).trim() + (content.length > previewLength ? "..." : "");
-		}
 
-		return preview;
-	}
-
-	function displaySearchResults(results, query) {
-		var searchResultsEl = document.getElementById("search-results"),
-			searchProcessEl = document.getElementById("search-process");
-
-		if (results.length) {
-			var resultsHTML = "";
-			results.forEach(function (result) {
-				var item = window.data[result.ref],
-					contentPreview = getPreview(query, item.content, 170),
-					titlePreview = getPreview(query, item.title);
-
-				resultsHTML += "<li><h4><a href='{{ site.baseurl }}" + item.url.trim() + "'>" + titlePreview + "</a></h4><p><small>" + contentPreview + "</small></p></li>";
-			});
-
-			searchResultsEl.innerHTML = resultsHTML;
-			searchProcessEl.innerText = "Showing";
-		} else {
-			searchResultsEl.style.display = "none";
-			searchProcessEl.innerText = "No";
-		}
-	}
-
-	window.index = lunr(function () {
-		this.field("id");
-		this.field("title", {boost: 10});
-		this.field("categories");
-		this.field("url");
-		this.field("content");
-	});
-
-	var query = decodeURIComponent((getQueryVariable("q") || "").replace(/\+/g, "%20")),
-		searchQueryContainerEl = document.getElementById("search-query-container"),
-		searchQueryEl = document.getElementById("search-query");
-
-	searchQueryEl.innerText = query;
-        if (query != ""){
-   		searchQueryContainerEl.style.display = "inline";
-        }
-
-	for (var key in window.data) {
-		window.index.add(window.data[key]);
-	}
-
-	displaySearchResults(window.index.search(query), query); // Hand the results off to be displayed
-})();
+}(jQuery));
