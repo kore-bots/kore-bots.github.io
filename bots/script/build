@@ -1,8 +1,0 @@
-#!/bin/sh
-
-echo "Packaging gem... \n"
-gem build kore-bots.gemspec
-
-echo "Cleaning up... \n"
-git add *.gem
-git commit -m 'Bump kore-bots gem package'
