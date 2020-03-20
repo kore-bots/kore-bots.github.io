@@ -14,7 +14,6 @@ folders:
 #
 #  - title: Sample 2 really long title that will wrap even longer
 #    url: /sample2.html
-
     subfolders:
     - title: Bots
       subfolderitems:
@@ -37,7 +36,6 @@ folders:
 
           - title: Sub-sublevel 3
             url: /subsublevel3.html
-
     subfolders:
     - title: Kora
       subfolderitems:
