@@ -4,16 +4,16 @@ owner: tomjohnson1492
 ## Keep this commented out content because it shows the YAML model for the sidebar.
 
 folders:
-- title: Getting Started
-  folderitems:
-  - title: Home
-    url: /index.html
-
-  - title: Sample 1 really long title that will wrap
-    url: /sample1.html
-
-  - title: Sample 2 really long title that will wrap even longer
-    url: /sample2.html
+- title: Projects
+#  folderitems:
+#  - title: Home
+#    url: /index.html
+#
+#  - title: 
+#    url: /sample1.html
+#
+#  - title: Sample 2 really long title that will wrap even longer
+#    url: /sample2.html
 
     subfolders:
     - title: Bots
