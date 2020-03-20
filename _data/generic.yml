@@ -1,10 +1,10 @@
-sidebarTitle: Generic sidebar
+sidebarTitle: Documentation
 owner: tomjohnson1492
 
 ## Keep this commented out content because it shows the YAML model for the sidebar.
 
 folders:
-- title: Theme documentation
+- title: Getting Started
   folderitems:
   - title: Home
     url: /index.html
@@ -15,11 +15,8 @@ folders:
   - title: Sample 2 really long title that will wrap even longer
     url: /sample2.html
 
-  - title: Sample 3
-    url: /sample3.html
-
     subfolders:
-    - title: Second level deep
+    - title: Bots
       subfolderitems:
 
       - title: Sublevel 1
@@ -27,9 +24,6 @@ folders:
 
       - title: Sublevel 2
         url: /sublevel2.html
-
-      - title: Sublevel 3
-        url: /sublevel3.html
 
         subsubfolders:
         - title: Third level deep
@@ -44,7 +38,30 @@ folders:
           - title: Sub-sublevel 3
             url: /subsublevel3.html
 
-- title: Another folder level
+    subfolders:
+    - title: Kora
+      subfolderitems:
+
+      - title: Sublevel 1
+        url: /sublevel1.html
+
+      - title: Sublevel 2
+        url: /sublevel2.html
+
+        subsubfolders:
+        - title: Third level deep
+          subsubfolderitems:
+
+          - title: Sub-sublevel 1
+            url: /subsublevel1.html
+
+          - title: Sub-sublevel 2
+            url: /subsublevel2.html
+
+          - title: Sub-sublevel 3
+            url: /subsublevel3.html
+
+- title: HOW-TO'S
   folderitems:
   - title: Home
     url: /index.html
