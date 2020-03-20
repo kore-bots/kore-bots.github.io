@@ -59,6 +59,28 @@ folders:
           - title: Sub-sublevel 3
             url: /subsublevel3.html
 
+    subfolders:
+    - title: Bots
+      subfolderitems:
+
+      - title: Sublevel 1
+        url: /sublevel1.html
+
+      - title: Sublevel 2
+        url: /sublevel2.html
+
+        subsubfolders:
+        - title: Third level deep
+          subsubfolderitems:
+
+          - title: Sub-sublevel 1
+            url: /subsublevel1.html
+
+          - title: Sub-sublevel 2
+            url: /subsublevel2.html
+
+          - title: Sub-sublevel 3
+            url: /subsublevel3.html
 - title: HOW-TO'S
   folderitems:
   - title: Home
