@@ -5,15 +5,6 @@ owner: tomjohnson1492
 
 folders:
 - title: Projects
-#  folderitems:
-#  - title: Home
-#    url: /index.html
-#
-#  - title: 
-#    url: /sample1.html
-#
-#  - title: Sample 2 really long title that will wrap even longer
-#    url: /sample2.html
     subfolders:
     - title: Bots
       subfolderitems:
