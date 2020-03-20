@@ -83,7 +83,7 @@ folders:
             url: /subsublevel3.html
 
 
-- title: HOW-TO'S
+- title: PROJECTS
   folderitems:
   - title: Home
     url: /index.html
@@ -96,6 +96,10 @@ folders:
 
   - title: Thing 3
     url: /thing3.html
+    subfolders:
+    - title: Bots
+    subfolders:
+    - title: Kora
 
 - title: PROJECTS
     subfolders:
